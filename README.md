@@ -95,8 +95,30 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
 
 ---
 
-## 🌐 Getting Started
+# 🌐 Getting Started
+## 🌐 Live Demo
 
+Website: https://drugs-supply-chain-iota.vercel.app/
+
+## 🔑 Demo Credentials
+
+## Admin
+Email: admin@drug.com  
+Password: password
+
+## Vendor
+Email: vendor@gmail.com 
+Password: 123456
+
+## Hospital
+Email: aubhrosdawef@gmail.com 
+Password: 123456
+
+## Pharmacy
+Email: robinhood08012023@gmail.com 
+Password: 123456
+
+⚠️ These accounts are provided only for demonstration and testing purposes.
 ### Prerequisites
 
 - Node.js 18.x or later
@@ -130,29 +152,6 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
-# 🌐 Live Demo
-
-Website: https://drugs-supply-chain-iota.vercel.app/
-
-# 🔑 Demo Credentials
-
-## Admin
-Email: admin@drug.com  
-Password: password
-
-## Vendor
-Email: vendor@gmail.com
-Password: 123456
-
-## Hospital
-Email: aubhrosdawef@gmail.com
-Password: 123456
-
-## Pharmacy
-Email: robinhood08012023@gmail.com 
-Password: 123456
-
-⚠️ These accounts are provided only for demonstration and testing purposes.
 
 ## 🔧 Environment Variables
 
@@ -193,19 +192,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add YourFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
----
-
 ## 📞 Support
 
-For support, email: support@yourdomain.com
+For support, email: ayushsampark2025@gmail.com
 
 ---
 
