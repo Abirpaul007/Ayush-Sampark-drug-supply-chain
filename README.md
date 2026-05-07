@@ -1,4 +1,4 @@
-# Drug Supply Chain Management System
+#AYUSH SAMPARK: Drug Supply Chain Management System
 
 An AI-powered and blockchain-enabled pharmaceutical supply chain management platform designed to improve transparency, traceability, inventory optimization, and secure medicine distribution across healthcare ecosystems. The platform integrates Blockchain, SARIMA-based demand forecasting, IoT monitoring, and real-time analytics to ensure efficient drug procurement and uninterrupted medicine availability. The system supports multiple user roles (Admin, Vendor/Manufacturer, Hospital, Pharmacy), real-time order tracking, inventory management, analytics, and document handling.
 
@@ -43,7 +43,7 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
 ├── contracts/              # Solidity smart contracts
 │   └── DrugSupplyChain.sol
 ├── emails/                 # Email templates (e.g., verification)
-├── ML_service              # Demand Forecasting
+├── ML_service/             # Demand Forecasting
 ├── lib/                    # Backend logic, models, features, db, utils
 │   ├── models/             # Mongoose models (User, Order, Inventory, etc.)
 │   ├── features/           # Redux slices (auth, blockchain, inventory)
@@ -69,7 +69,7 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
 
 ## 🧑‍💻 User Roles & Dashboards
 
-- **Admin:** User management, analytics, smart contract logs, supply chain tracker, notifications, settings.
+- **Admin:** User management, analytics, smart contract logs, Tender allocation, supply chain tracker, notifications, settings.
 - **Vendor/Manufacturer:** Manage medicines, update stock, view/accept/reject orders, dispatch, upload invoices/POD, performance metrics, expiry logs.
 - **Hospital:** Order drugs, track orders, manage inventory, confirm delivery, dispense drugs, view usage history, feedback/support.
 - **Pharmacy:** Order drugs, track orders, manage inventory, confirm delivery, internal transfers, drug returns, consumption analytics.
