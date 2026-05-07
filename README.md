@@ -1,4 +1,13 @@
-# AYUSH SAMPARK: Drug Supply Chain Management System
+<p align="center">
+  <img src="https://drugs-supply-chain-iota.vercel.app/logo.png" alt="Ayush Sampark Logo" width="180"/>
+</p>
+
+<h1 align="center">Ayush Sampark</h1>
+
+<p align="center">
+AI-Powered & Blockchain-enabled solution for drug supply chain
+</p>
+
 
 An AI-powered and blockchain-enabled pharmaceutical supply chain management platform designed to improve transparency, traceability, inventory optimization, and secure medicine distribution across healthcare ecosystems. The platform integrates Blockchain, SARIMA-based demand forecasting, IoT monitoring, and real-time analytics to ensure efficient drug procurement and uninterrupted medicine availability. The system supports multiple user roles (Admin, Vendor/Manufacturer, Hospital, Pharmacy), real-time order tracking, inventory management, analytics, and document handling.
 
