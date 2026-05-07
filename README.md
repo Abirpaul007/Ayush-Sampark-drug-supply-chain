@@ -43,6 +43,7 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
 ├── contracts/              # Solidity smart contracts
 │   └── DrugSupplyChain.sol
 ├── emails/                 # Email templates (e.g., verification)
+├── ML_service              # Demand Forecasting
 ├── lib/                    # Backend logic, models, features, db, utils
 │   ├── models/             # Mongoose models (User, Order, Inventory, etc.)
 │   ├── features/           # Redux slices (auth, blockchain, inventory)
