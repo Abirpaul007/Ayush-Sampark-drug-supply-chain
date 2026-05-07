@@ -1,0 +1,144 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  HOSPITAL_STAFF
+  PHARMACY_STAFF
+  VENDOR
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  IN_TRANSIT
+  DELIVERED
+  CANCELLED
+}
+
+enum DrugCategory {
+  ANTIBIOTICS
+  ANALGESICS
+  ANTIVIRAL
+  VACCINES
+  INSULIN
+  OTHER
+}
+
+model User {
+  id            String         @id @default(cuid())
+  name          String
+  email         String         @unique
+  password      String?        // Optional for MetaMask users
+  role          UserRole
+  organization  String
+  walletAddress String?        // For MetaMask users
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  // Relations
+  requests      HospitalRequest[]
+  orders        VendorOrder[]
+  auditLogs     AuditLog[]
+  managedPharmacyInventories PharmacyInventory[] @relation("ManagedBy")
+}
+
+model Drug {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  category    String
+  quantity    Int
+  location    String?
+  expiryDate  DateTime?
+  batchNumber String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  requests    HospitalRequest[]
+  orders      VendorOrder[]
+  pharmacyInventories PharmacyInventory[]
+}
+
+model HospitalRequest {
+  id        String       @id @default(cuid())
+  drugId    String
+  userId    String
+  quantity  Int
+  status    RequestStatus @default(PENDING)
+  urgency   UrgencyLevel @default(NORMAL)
+  notes     String?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  // Relations
+  drug      Drug         @relation(fields: [drugId], references: [id])
+  user      User         @relation(fields: [userId], references: [id])
+}
+
+model PharmacyInventory {
+  id        String   @id @default(cuid())
+  drugId    String
+  quantity  Int
+  location  String   // Storage location in pharmacy
+  lastAudit DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  managedById String
+
+  // Relations
+  drug      Drug     @relation(fields: [drugId], references: [id])
+  managedBy User     @relation("ManagedBy", fields: [managedById], references: [id])
+}
+
+model VendorOrder {
+  id            String        @id @default(cuid())
+  drugId        String
+  userId        String
+  quantity      Int
+  status        OrderStatus   @default(PENDING)
+  trackingId    String?
+  deliveryDate  DateTime?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  // Relations
+  drug          Drug          @relation(fields: [drugId], references: [id])
+  user          User          @relation(fields: [userId], references: [id])
+}
+
+model AuditLog {
+  id          String      @id @default(cuid())
+  userId      String
+  action      String
+  details     String?
+  createdAt   DateTime    @default(now())
+
+  // Relations
+  user        User        @relation(fields: [userId], references: [id])
+}
+
+enum RequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  FULFILLED
+  CANCELLED
+}
+
+enum UrgencyLevel {
+  LOW
+  NORMAL
+  HIGH
+  CRITICAL
+} 

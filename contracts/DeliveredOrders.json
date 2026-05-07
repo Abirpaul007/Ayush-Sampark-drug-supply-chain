@@ -1,0 +1,222 @@
+ [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "orderId",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "hospitalName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "medicineId",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "medicineName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "vendorId",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "vendorName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "OrderDelivered",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "orderId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hospitalName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "medicineId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "medicineName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "vendorId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "vendorName",
+          "type": "string"
+        }
+      ],
+      "name": "addDeliveredOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "deliveredOrders",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "orderId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hospitalName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "medicineId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "medicineName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "vendorId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "vendorName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDeliveredOrders",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "orderId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "medicineId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "medicineName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "quantity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "vendorId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vendorName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct DeliveredOrders.Order[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOrderCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
