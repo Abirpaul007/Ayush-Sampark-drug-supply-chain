@@ -121,6 +121,29 @@ An AI-powered and blockchain-enabled pharmaceutical supply chain management plat
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
+# 🌐 Live Demo
+
+Website: https://drugs-supply-chain-iota.vercel.app/
+
+# 🔑 Demo Credentials
+
+## Admin
+Email: admin@drug.com  
+Password: password
+
+## Vendor
+Email: vendor@gmail.com
+Password: 123456
+
+## Hospital
+Email: aubhrosdawef@gmail.com
+Password: 123456
+
+## Pharmacy
+Email: robinhood08012023@gmail.com 
+Password: 123456
+
+⚠️ These accounts are provided only for demonstration and testing purposes.
 
 ## 🔧 Environment Variables
 
