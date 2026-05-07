@@ -1,6 +1,6 @@
 # Drug Supply Chain Management System
 
-A full-stack, blockchain-enabled platform for secure, transparent, and efficient management of pharmaceutical supply chains. The system supports multiple user roles (Admin, Vendor/Manufacturer, Hospital, Pharmacy), real-time order tracking, inventory management, analytics, and document handling.
+An AI-powered and blockchain-enabled pharmaceutical supply chain management platform designed to improve transparency, traceability, inventory optimization, and secure medicine distribution across healthcare ecosystems. The platform integrates Blockchain, SARIMA-based demand forecasting, IoT monitoring, and real-time analytics to ensure efficient drug procurement and uninterrupted medicine availability. The system supports multiple user roles (Admin, Vendor/Manufacturer, Hospital, Pharmacy), real-time order tracking, inventory management, analytics, and document handling.
 
 ---
 
